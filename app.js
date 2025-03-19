@@ -50,14 +50,17 @@ Example: isCharAVowel('a') should return true.
 Complete the exercise in the space below:
 */
 
+
 function isCharAVowel(chara){
-    if('aeiou'.includes(chara)){
-        return 'True'
-    } else {
-        return 'False'
-    }
+    // const vowels = 'aeiou'
+    // return vowels.includes(chara.toLowerCase())
+     if('aeiou'.includes(chara)){
+         return 'True'
+     } else {
+         return 'False'
+     }
 }
-console.log('Exercise 3 Result:', isCharAVowel("b"));
+console.log('Exercise 3 Result:', isCharAVowel("a"));
 
 /*
 Exercise 4: generateEmail()
@@ -119,6 +122,11 @@ const maxOfThree = (x, y, z) => {
         return z
     }
 }
+
+// function maxOfThree(num1, num2, num3){
+//     return maxOfTwoNumbers(num1, maxOfTwoNumbers(num2, num3))
+//     return Math.max(num1, num2, num3) this is the easiest way
+// }
 
 
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8));
@@ -192,8 +200,6 @@ const basicCalculator = (num1, num2, action) => {
         return num1 / num2
     }
 }
-
-
 
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
 
